@@ -1,0 +1,98 @@
+ruby-execjs (2.8.1-1) unstable; urgency=medium
+
+  * Team Upload
+
+  [ Debian Janitor ]
+  * Update watch file format version to 4.
+  * Update standards version to 4.5.1, no changes needed.
+
+  [ Pirate Praveen ]
+  * New upstream version 2.8.1
+  * Bump Standards-Version to 4.6.0 (no changes needed)
+
+ -- Pirate Praveen <praveen@debian.org>  Tue, 12 Oct 2021 03:03:47 +0530
+
+ruby-execjs (2.7.0-1) unstable; urgency=medium
+
+  * Team Upload
+
+  [ Cédric Boutillier ]
+  * Use https:// in Vcs-* fields
+  * Bump Standards-Version to 3.9.7 (no changes needed)
+  * Run wrap-and-sort on packaging files
+
+  [ Antonio Terceiro ]
+  * Remove myself from Uploaders:
+
+  [ Utkarsh Gupta ]
+  * Add salsa-ci.yml
+
+  [ Debian Janitor ]
+  * Use secure copyright file specification URI.
+  * Bump debhelper from old 9 to 12.
+  * Set debhelper-compat version in Build-Depends.
+  * Set upstream metadata fields: Bug-Database, Bug-Submit, Repository,
+    Repository-Browse.
+  * Update Vcs-* headers from URL redirect.
+  * Use canonical URL in Vcs-Git.
+
+  [ Cédric Boutillier ]
+  * Update team name
+  * Add .gitattributes to keep unwanted files out of the source package
+
+  [ Pirate Praveen ]
+  * New upstream version 2.7.0
+  * Bump Standards-Version to 4.5.0 (no changes needed)
+  * Bump debhelper compatibility level to 13
+  * Add lintian overrides for test data
+
+ -- Pirate Praveen <praveen@debian.org>  Wed, 30 Sep 2020 16:31:23 +0530
+
+ruby-execjs (2.6.0-1) unstable; urgency=medium
+
+  * New upstream release
+  * debian/watch: point at https://github.com/rails/execjs as new upstream,
+    and simplify
+    - change Homepage: field to reflect new upstream
+ -- Antonio Terceiro <terceiro@debian.org>  Tue, 22 Sep 2015 15:31:19 -0300
+
+ruby-execjs (2.4.0-1) unstable; urgency=medium
+
+  * New upstream release
+  * Update packaging with a new dh-make-ruby run
+  * debian/patches/01_use_local_coffee_script_source: dropped, not needed
+    anymore.
+  * debian/rules: force C.UTF-8 locales, which the test suite expects
+
+ -- Antonio Terceiro <terceiro@debian.org>  Fri, 14 Aug 2015 14:26:07 -0300
+
+ruby-execjs (2.2.1-1) unstable; urgency=medium
+
+  * new upstream release
+  * now uses github version (not gem) so test suite is imported
+  * patched test suite to use local copy of coffeescript (instead of going
+    online)
+  * new build dependency: libjs-coffeescript
+  * updated standards to 3.9.5
+  * bumped dh and compat to 9
+  * added self to uploaders, copyright
+
+ -- Caitlin Matos <caitlin.matos@zoho.com>  Tue, 29 Jul 2014 21:34:24 -0400
+
+ruby-execjs (1.4.0-3) unstable; urgency=medium
+
+  * No changes rebuild to add support for new interpreters.
+
+ -- Antonio Terceiro <terceiro@debian.org>  Sat, 29 Mar 2014 12:38:15 -0300
+
+ruby-execjs (1.4.0-2) unstable; urgency=low
+
+  * Add missing build dependency on ruby-multi-json (Closes: #680836).
+
+ -- Antonio Terceiro <terceiro@debian.org>  Fri, 13 Jul 2012 08:37:19 -0300
+
+ruby-execjs (1.4.0-1) unstable; urgency=low
+
+  * Initial release.
+
+ -- Antonio Terceiro <terceiro@debian.org>  Tue, 26 Jun 2012 22:22:37 -0300

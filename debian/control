@@ -1,0 +1,33 @@
+Source: ruby-execjs
+Section: ruby
+Priority: optional
+Maintainer: Debian Ruby Team <pkg-ruby-extras-maintainers@lists.alioth.debian.org>
+Uploaders: Caitlin Matos <caitlin.matos@zoho.com>
+Build-Depends: bundler,
+               debhelper-compat (= 13),
+               gem2deb,
+               libjs-coffeescript,
+               nodejs,
+               rake,
+               ruby-multi-json
+Standards-Version: 4.6.0
+Vcs-Git: https://salsa.debian.org/ruby-team/ruby-execjs.git
+Vcs-Browser: https://salsa.debian.org/ruby-team/ruby-execjs
+Homepage: https://github.com/rails/execjs
+Testsuite: autopkgtest-pkg-ruby
+XS-Ruby-Versions: all
+
+Package: ruby-execjs
+Architecture: all
+XB-Ruby-Versions: ${ruby:Versions}
+Depends: nodejs,
+         ruby | ruby-interpreter,
+         ruby-multi-json,
+         ${misc:Depends},
+         ${shlibs:Depends}
+Description: Run JavaScript code from Ruby
+ ExecJS lets you run JavaScript code from Ruby. It can use several different
+ JavaScript runtimes..
+ .
+ This package is used by others (e.g. ruby-uglifier and ruby-coffee-script) to
+ run code written in JavaScript.
